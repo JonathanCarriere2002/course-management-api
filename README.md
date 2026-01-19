@@ -9,7 +9,7 @@
 
 ## Authors
 
-This project was developed by Jacob Beauregard-Tousignant, Jonathan Carrière, Emeric Chauret, Samir El Haddaji and Jérémy Lebel.
+This API was developed by Jacob Beauregard-Tousignant, Jonathan Carrière, Emeric Chauret, Samir El Haddaji and Jérémy Lebel.
 
 ## Running the Application
 
