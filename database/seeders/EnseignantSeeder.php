@@ -24,7 +24,7 @@ class EnseignantSeeder extends Seeder
         $beauregard = Enseignant::factory()->createOne([
             "nom" => "Beauregard-Tousignant",
             "prenom" => "Jacob",
-            "courriel" => "beauregard@email.qc.ca",
+            "courriel" => "beauregard@cegepoutaouais.qc.ca",
             "bureau" => "1.063"
         ]);
         $beauregard->associerProgrammesSeeder([$programmes[0]->id, $programmes[30]->id]);
@@ -33,7 +33,7 @@ class EnseignantSeeder extends Seeder
         $bolduc = Enseignant::factory()->createOne([
             "nom" => "Nom01",
             "prenom" => "Prénom01",
-            "courriel" => "enseignant01@email.qc.ca",
+            "courriel" => "enseignant01@cegepoutaouais.qc.ca",
             "bureau" => "1.079"
         ]);
         $bolduc->associerProgrammesSeeder([$programmes[0]->id]);
@@ -42,7 +42,7 @@ class EnseignantSeeder extends Seeder
         $bouallouche = Enseignant::factory()->createOne([
             "nom" => "Nom02",
             "prenom" => "Prénom02",
-            "courriel" => "enseignant02@email.qc.ca",
+            "courriel" => "enseignant02@cegepoutaouais.qc.ca",
             "bureau" => "1.075",
             "poste" => 2013
         ]);
@@ -52,7 +52,7 @@ class EnseignantSeeder extends Seeder
         $bouguerra= Enseignant::factory()->createOne([
             "nom" => "Nom03",
             "prenom" => "Prénom03",
-            "courriel" => "enseignant03@email.qc.ca",
+            "courriel" => "enseignant03@cegepoutaouais.qc.ca",
             "bureau" => "1.065",
             "poste" => 2021
         ]);
@@ -62,7 +62,7 @@ class EnseignantSeeder extends Seeder
         $bounouar = Enseignant::factory()->createOne([
             "nom" => "Nom04",
             "prenom" => "Prénom04",
-            "courriel" => "enseignant04@email.qc.ca",
+            "courriel" => "enseignant04@cegepoutaouais.qc.ca",
             "bureau" => "1.067",
             "poste" => 2014
         ]);
@@ -72,7 +72,7 @@ class EnseignantSeeder extends Seeder
         $corriveau = Enseignant::factory()->createOne([
             "nom" => "Nom05",
             "prenom" => "Prénom05",
-            "courriel" => "enseignant05@email.qc.ca",
+            "courriel" => "enseignant05@cegepoutaouais.qc.ca",
             "bureau" => "1.077",
             "poste" => 2022
         ]);
@@ -82,7 +82,7 @@ class EnseignantSeeder extends Seeder
         $elouasbi = Enseignant::factory()->createOne([
             "nom" => "Nom06",
             "prenom" => "Prénom06",
-            "courriel" => "enseignant06@email.qc.ca",
+            "courriel" => "enseignant06@cegepoutaouais.qc.ca",
             "bureau" => "1.075"
         ]);
         $elouasbi->associerProgrammesSeeder([$programmes[0]->id, $programmes[30]->id]);
@@ -91,7 +91,7 @@ class EnseignantSeeder extends Seeder
         $gauthier = Enseignant::factory()->createOne([
             "nom" => "Nom07",
             "prenom" => "Prénom07",
-            "courriel" => "enseignant07@email.qc.ca",
+            "courriel" => "enseignant07@cegepoutaouais.qc.ca",
             "bureau" => "1.071",
             "poste" => 2024
         ]);
@@ -101,7 +101,7 @@ class EnseignantSeeder extends Seeder
         $hocini = Enseignant::factory()->createOne([
             "nom" => "Nom08",
             "prenom" => "Prénom08",
-            "courriel" => "enseignant08@email.qc.ca",
+            "courriel" => "enseignant08@cegepoutaouais.qc.ca",
             "bureau" => "1.076",
             "poste" => 2015
         ]);
@@ -111,7 +111,7 @@ class EnseignantSeeder extends Seeder
         $huneault = Enseignant::factory()->createOne([
             "nom" => "Nom09",
             "prenom" => "Prénom09",
-            "courriel" => "enseignant09@email.qc.ca",
+            "courriel" => "enseignant09@cegepoutaouais.qc.ca",
             "bureau" => "1.077",
             "poste" => 2016
         ]);
@@ -121,7 +121,7 @@ class EnseignantSeeder extends Seeder
         $levasseur = Enseignant::factory()->createOne([
             "nom" => "Nom10",
             "prenom" => "Prénom10",
-            "courriel" => "enseignant10@email.qc.ca",
+            "courriel" => "enseignant10@cegepoutaouais.qc.ca",
             "bureau" => "1.075",
             "poste" => 2017
         ]);
@@ -131,7 +131,7 @@ class EnseignantSeeder extends Seeder
         $mayrandstgelais = Enseignant::factory()->createOne([
             "nom" => "Nom11",
             "prenom" => "Prénom11",
-            "courriel" => "enseignant11@email.qc.ca",
+            "courriel" => "enseignant11@cegepoutaouais.qc.ca",
             "bureau" => "1.050",
             "poste" => 2024
         ]);
@@ -141,7 +141,7 @@ class EnseignantSeeder extends Seeder
         $mongeau = Enseignant::factory()->createOne([
             "nom" => "Nom12",
             "prenom" => "Prénom12",
-            "courriel" => "enseignant12@email.qc.ca",
+            "courriel" => "enseignant12@cegepoutaouais.qc.ca",
             "bureau" => "1.076",
             "poste" => 2018
         ]);
@@ -151,7 +151,7 @@ class EnseignantSeeder extends Seeder
         $page = Enseignant::factory()->createOne([
             "nom" => "Nom13",
             "prenom" => "Prénom13",
-            "courriel" => "enseignant13@email.qc.ca",
+            "courriel" => "enseignant13@cegepoutaouais.qc.ca",
             "bureau" => "1.083",
             "poste" => 2019
         ]);
@@ -161,7 +161,7 @@ class EnseignantSeeder extends Seeder
         $stgeorges = Enseignant::factory()->createOne([
             "nom" => "Nom14",
             "prenom" => "Prénom14",
-            "courriel" => "enseignant14@email.qc.ca",
+            "courriel" => "enseignant14@cegepoutaouais.qc.ca",
             "bureau" => "1.081",
             "poste" => 2020
         ]);
@@ -171,7 +171,7 @@ class EnseignantSeeder extends Seeder
         $stambouli = Enseignant::factory()->createOne([
             "nom" => "Nom15",
             "prenom" => "Prénom15",
-            "courriel" => "enseignant15@email.qc.ca",
+            "courriel" => "enseignant15@cegepoutaouais.qc.ca",
             "bureau" => "1.050",
             "poste" => 2025
         ]);
@@ -181,7 +181,7 @@ class EnseignantSeeder extends Seeder
         $carriere = Enseignant::factory()->createOne([
             "nom" => "Carrière",
             "prenom" => "Jonathan",
-            "courriel" => "carriere@email.qc.ca",
+            "courriel" => "carriere@cegepoutaouais.qc.ca",
             "bureau" => "1.063"
         ]);
         $carriere->associerProgrammesSeeder([$programmes[0]->id, $programmes[30]->id]);
@@ -190,7 +190,7 @@ class EnseignantSeeder extends Seeder
         $chauret = Enseignant::factory()->createOne([
             "nom" => "Chauret",
             "prenom" => "Emeric",
-            "courriel" => "chauret@email.qc.ca",
+            "courriel" => "chauret@cegepoutaouais.qc.ca",
             "bureau" => "1.063"
         ]);
         $chauret->associerProgrammesSeeder([$programmes[0]->id, $programmes[30]->id]);
@@ -199,7 +199,7 @@ class EnseignantSeeder extends Seeder
         $elhaddaji = Enseignant::factory()->createOne([
             "nom" => "El Haddaji",
             "prenom" => "Samir",
-            "courriel" => "elhaddaji@email.qc.ca",
+            "courriel" => "elhaddaji@cegepoutaouais.qc.ca",
             "bureau" => "1.063"
         ]);
         $elhaddaji->associerProgrammesSeeder([$programmes[0]->id, $programmes[30]->id]);
@@ -208,7 +208,7 @@ class EnseignantSeeder extends Seeder
         $lebel = Enseignant::factory()->createOne([
             "nom" => "Lebel",
             "prenom" => "Jérémy",
-            "courriel" => "lebel@email.qc.ca",
+            "courriel" => "lebel@cegepoutaouais.qc.ca",
             "bureau" => "1.063"
         ]);
         $lebel->associerProgrammesSeeder([$programmes[0]->id, $programmes[30]->id]);

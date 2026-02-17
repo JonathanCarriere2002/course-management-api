@@ -21,7 +21,7 @@ class EnseignantFactory extends Factory
         return [
             'nom' => fake()->unique()->lastName,
             'prenom' => fake()->unique()->firstName,
-            'courriel' => fake()->randomElement(['john@email.qc.ca', 'david@email.qc.ca', 'jack@email.qc.ca']),
+            'courriel' => fake()->randomElement(['john@cegepoutaouais.qc.ca', 'david@cegepoutaouais.qc.ca', 'jack@cegepoutaouais.qc.ca']),
             'bureau' => fake()->randomElement(['1.063', '1.075', '1.085', '1.105', '2.708']),
             // 'poste' => fake()->randomElement([2000, 2005, 2010, 2015, 2020]),
             'created_at'=>now(),

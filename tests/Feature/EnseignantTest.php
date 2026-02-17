@@ -63,14 +63,14 @@ class EnseignantTest extends TestCase
         $this->assertDatabaseMissing("enseignants", [
             "prenom" => "Jonathan",
             "nom" => "Carrière",
-            "courriel" => "jonathan@email.qc.ca",
+            "courriel" => "jonathan@cegepoutaouais.qc.ca",
             "bureau" => "1.063",
         ]);
         // Insérer l'enseignant dans la base de données via une requête POST
         $reponse = $this->postJson("/api/enseignants", [
             "prenom" => "Jonathan",
             "nom" => "Carrière",
-            "courriel" => "jonathan@email.qc.ca",
+            "courriel" => "jonathan@cegepoutaouais.qc.ca",
             "bureau" => "1.063",
             "programmes" => []
         ]);
@@ -80,7 +80,7 @@ class EnseignantTest extends TestCase
         $this->assertDatabaseHas("enseignants", [
             "prenom" => "Jonathan",
             "nom" => "Carrière",
-            "courriel" => "jonathan@email.qc.ca",
+            "courriel" => "jonathan@cegepoutaouais.qc.ca",
             "bureau" => "1.063"
         ]);
     }
@@ -94,7 +94,7 @@ class EnseignantTest extends TestCase
         $reponse = $this->putJson("/api/enseignants/{$this->enseignant->id}", [
             "prenom" => "Jonathan",
             "nom" => "Carrière",
-            "courriel" => "jonathan@email.qc.ca",
+            "courriel" => "jonathan@cegepoutaouais.qc.ca",
             "bureau" => "1.063",
             "poste" => 2002,
             "programmes" => []
@@ -105,7 +105,7 @@ class EnseignantTest extends TestCase
         $this->assertDatabaseHas("enseignants", [
             "prenom" => "Jonathan",
             "nom" => "Carrière",
-            "courriel" => "jonathan@email.qc.ca",
+            "courriel" => "jonathan@cegepoutaouais.qc.ca",
             "bureau" => "1.063",
             "poste" => 2002
         ]);

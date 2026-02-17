@@ -69,7 +69,7 @@ class UserTest extends TestCase
         $this->assertDatabaseMissing("users", [
             'name' => 'Carrière',
             'firstname' => 'Jonathan',
-            'email' => 'jonathan@email.qc.ca',
+            'email' => 'jonathan@cegepoutaouais.qc.ca',
             'email_verified_at' => $this->tempsCourriel,
             'password' => 'password123!',
             'role' => 1
@@ -79,7 +79,7 @@ class UserTest extends TestCase
         $reponse = $this->postJson("/api/utilisateurs", [
             'nom' => 'Carrière',
             'prenom' => 'Jonathan',
-            'courriel' => 'jonathan@email.qc.ca',
+            'courriel' => 'jonathan@cegepoutaouais.qc.ca',
             'mot_de_passe' => $motDePasse,
             'mot_de_passe_confirmation' => $motDePasse,
             'role' => 1
@@ -90,13 +90,13 @@ class UserTest extends TestCase
         $this->assertDatabaseHas("users", [
             'name' => 'Carrière',
             'firstname' => 'Jonathan',
-            'email' => 'jonathan@email.qc.ca',
+            'email' => 'jonathan@cegepoutaouais.qc.ca',
             'email_verified_at' => $this->tempsCourriel,
             'role' => 1
         ]);
         // Vérifier que le mot de passe a correctement été haché puis insérer dans la base de données
         // Source : https://stackoverflow.com/questions/57734585/can-i-check-if-a-hashed-password-is-equal-to-a-specific-value-in-laravel
-        $this->assertTrue(Hash::check($motDePasse, User::where('email', 'jonathan@email.qc.ca')->first()->password));
+        $this->assertTrue(Hash::check($motDePasse, User::where('email', 'jonathan@cegepoutaouais.qc.ca')->first()->password));
     }
 
     /**
@@ -108,7 +108,7 @@ class UserTest extends TestCase
         $this->assertDatabaseMissing("users", [
             'name' => 'Carrière',
             'firstname' => 'Jonathan',
-            'email' => 'jonathan@email.qc.ca',
+            'email' => 'jonathan@cegepoutaouais.qc.ca',
             'email_verified_at' => $this->tempsCourriel,
             'password' => 'password123!',
             'role' => 1
@@ -144,7 +144,7 @@ class UserTest extends TestCase
         $reponse = $this->putJson("/api/utilisateurs/{$this->utilisateur->id}", [
             'nom' => 'Carrière2',
             'prenom' => 'Jonathan2',
-            'courriel' => 'jonathan2@email.qc.ca',
+            'courriel' => 'jonathan2@cegepoutaouais.qc.ca',
             'mot_de_passe' => $motDePasse,
             'mot_de_passe_confirmation' => $motDePasse,
             'role' => 2
@@ -155,13 +155,13 @@ class UserTest extends TestCase
         $this->assertDatabaseHas("users", [
             'name' => 'Carrière2',
             'firstname' => 'Jonathan2',
-            'email' => 'jonathan2@email.qc.ca',
+            'email' => 'jonathan2@cegepoutaouais.qc.ca',
             'email_verified_at' => $this->tempsCourriel,
             'role' => 2
         ]);
         // Vérifier que le mot de passe a correctement été haché puis insérer dans la base de données
         // Source : https://stackoverflow.com/questions/57734585/can-i-check-if-a-hashed-password-is-equal-to-a-specific-value-in-laravel
-        $this->assertTrue(Hash::check($motDePasse, User::where('email', 'jonathan2@email.qc.ca')->first()->password));
+        $this->assertTrue(Hash::check($motDePasse, User::where('email', 'jonathan2@cegepoutaouais.qc.ca')->first()->password));
     }
 
     /**
@@ -173,7 +173,7 @@ class UserTest extends TestCase
         $reponse = $this->putJson("/api/utilisateurs/{$this->utilisateur->id}", [
             'nom' => 'Carrière2',
             'prenom' => 'Jonathan2',
-            'courriel' => 'jonathan2@email.qc.ca',
+            'courriel' => 'jonathan2@cegepoutaouais.qc.ca',
             'role' => 2
         ]);
         // Vérifier que la requête à fonctionner
@@ -182,7 +182,7 @@ class UserTest extends TestCase
         $this->assertDatabaseHas("users", [
             'name' => 'Carrière2',
             'firstname' => 'Jonathan2',
-            'email' => 'jonathan2@email.qc.ca',
+            'email' => 'jonathan2@cegepoutaouais.qc.ca',
             'email_verified_at' => $this->tempsCourriel,
             'role' => 2
         ]);

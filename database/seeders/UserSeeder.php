@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
         $utilisateur01 = User::factory()->createOne([
             "name" => "Admin",
             "firstname" => "Admin",
-            "email" => "admin@email.qc.ca",
+            "email" => "admin@cegepoutaouais.qc.ca",
             "email_verified_at" => now(),
             "password" => bcrypt("defaultPassword"),
             "role" => 1,
@@ -33,11 +33,11 @@ class UserSeeder extends Seeder
             "poste" => null
         ]);
 
-        // Insérer un utilisateur dans la base de données (Coordonnateur de Projet)
+        // Insérer un utilisateur dans la base de données (Conseiller Pédagogique)
         $utilisateur02 = User::factory()->createOne([
             "name" => "CP",
             "firstname" => "CP",
-            "email" => "CP@email.qc.ca",
+            "email" => "CP@cegepoutaouais.qc.ca",
             "email_verified_at" => now(),
             "password" => bcrypt("defaultPassword"),
             "role" => 2,
@@ -49,7 +49,7 @@ class UserSeeder extends Seeder
         $utilisateur03 = User::factory()->createOne([
             "name" => "SRDP",
             "firstname" => "SRDP",
-            "email" => "SRDP@email.qc.ca",
+            "email" => "SRDP@cegepoutaouais.qc.ca",
             "email_verified_at" => now(),
             "password" => bcrypt("defaultPassword"),
             "role" => 3,
@@ -61,7 +61,7 @@ class UserSeeder extends Seeder
         $utilisateur04 = User::factory()->createOne([
             "name" => "Coordonnateur",
             "firstname" => "Coordonnateur",
-            "email" => "Coordonnateur@email.qc.ca",
+            "email" => "Coordonnateur@cegepoutaouais.qc.ca",
             "email_verified_at" => now(),
             "password" => bcrypt("defaultPassword"),
             "role" => 4,
@@ -74,7 +74,7 @@ class UserSeeder extends Seeder
         $utilisateur5 = User::factory()->createOne([
             "name" => "Enseignant",
             "firstname" => "Enseignant",
-            "email" => "Enseignant@email.qc.ca",
+            "email" => "Enseignant@cegepoutaouais.qc.ca",
             "email_verified_at" => now(),
             "password" => bcrypt("defaultPassword"),
             "role" => 5,
